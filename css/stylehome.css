@@ -7,16 +7,21 @@
 }
 */
 
+@import "compass/css3";
+
+@import url(http://fonts.googleapis.com/css?family=Lato:700,900);
+
 
 
 body {
-      animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+  
+  animation: colorchange 50s; /* animation-name followed by duration in seconds*/
          /* you could also use milliseconds (ms) or something like 2.5s */
-      -webkit-animation: colorchange 50s; /* Chrome and Safari */
-      animation-iteration-count: 100;
-    }
+  -webkit-animation: colorchange 50s; /* Chrome and Safari */
+  animation-iteration-count: 100;
+}
 
-    @keyframes colorchange
+  @keyframes colorchange
     {
       0%   {background: white;}
       20%  {background: #E8E664;}
@@ -36,54 +41,63 @@ body {
       100% {background: white;};}
     }
 
-
-
-ul {
-  list-style-type: none;
-  text-align: center;
+body {
   margin: 0;
   padding: 0;
- }
+}
 
-li {
-  margin-left:2px;
-  float:left; /*pour IE*/
-  list-style: none;
- }
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
 
-ul li a {
- display:block;
- float:left;   
- width:200px;
- align-items: center;
- color:black;
- text-decoration:none;
- text-align:center;
- font-family: 'Open Sans', sans-serif;
- padding:5px;
- 
- /*pour avoir un effet "outset" avec IE :*/
- border-color:#DCDCDC #696969 #696969 #DCDCDC;
- }
 
-ul li a:hover {
+.navbar a {
+  
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
  background-color:rgb(154, 217, 234);
  border-color:#696969 #DCDCDC #DCDCDC #696969;
  } 
 
 
 img {
-  padding: 110px 0;
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
   display: block; 
   border-radius: 50%;
   margin: auto;
-  width: 40%;
+  margin-top: 80px;
+  width: 50%;
   clear: left;
 }
 
-h2 {
-  font-family: 'Lato', sans-serif;
-  width:600px;
-  padding:40px;
-  margin:auto;
+
+
+.text-longshadow {
+  max-width: 100%;
+  height: auto;
+  margin-top: 50px;
+  color: black;
+  font-size: 8rem; 
+  line-height: 8rem;
+  font-family: lato;
+  font-weight: 900;
+  text-align: center;
+  @include text-shadow(longshadow(darken($bg,30%),$bg,50, 0.5));
 }
+
+
