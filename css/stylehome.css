@@ -25,6 +25,7 @@ body {
 
 }
 
+
 .content {
   position: absolute;
   left: 0;
@@ -52,15 +53,12 @@ body {
   color: black;
 }
 
+
 a {
-  color: #ffffff;
+  color: inherit; 
+  text-decoration: inherit; 
 }
 
-a:hover{
-  background: rgb(152, 218, 232);
-  text-decoration: none;
-  color: black;
-}
 
 
 /*
@@ -88,4 +86,8 @@ img {
   clear: left;
   
 }
+
+
+
+
 
