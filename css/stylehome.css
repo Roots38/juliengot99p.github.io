@@ -1,78 +1,69 @@
 
+
 /*
 * {
+  
   border-style: solid;
   border-width: 1px;
-  border-color: white;
+  border-color: black;
 }
 */
 
-@import "compass/css3";
-
-@import url(http://fonts.googleapis.com/css?family=Lato:700,900);
-
-
-
-body {
-  
-  animation: colorchange 50s; /* animation-name followed by duration in seconds*/
-         /* you could also use milliseconds (ms) or something like 2.5s */
-  -webkit-animation: colorchange 50s; /* Chrome and Safari */
-  animation-iteration-count: 100;
-}
-
-  @keyframes colorchange
-    {
-      0%   {background: white;}
-      20%  {background: #E8E664;}
-      40%  {background: #FFA87D;}
-      60%  {background: #66E8A5;}
-      80%  {background: #FF70AB;}
-      100% {background: white;};}
-    }
-
-    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
-    {
-      0%   {background: white;}
-      20%  {background: #E8E664;}
-      40%  {background: #FFA87D;}
-      60%  {background: #66E8A5;}
-      80% {background: #FF70AB;}
-      100% {background: white;};}
-    }
 
 body {
   margin: 0;
   padding: 0;
 }
 
-.navbar {
-  overflow: hidden;
-  background-color: black;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  
-}
 
-
-.navbar a {
-  
-  float: left;
-  display: block;
-  color: white;
+.social {
+  position: relative;
+  top: 100px;
+  margin: auto;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  font-size:60px;
+
 }
 
-.navbar a:hover {
- background-color:rgb(154, 217, 234);
- border-color:#696969 #DCDCDC #DCDCDC #696969;
- } 
+.content {
+  position: absolute;
+  left: 0;
+  right: 75px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 50px;
+  width: auto;    
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 30px;
+  background: #000000;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: rgb(152, 218, 232);
+  text-decoration: none;
+  color: black;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover{
+  background: rgb(152, 218, 232);
+  text-decoration: none;
+  color: black;
+}
 
 
+/*
 img {
   max-width: 100%;
   height: auto;
@@ -84,20 +75,17 @@ img {
   width: 50%;
   clear: left;
 }
+*/
 
-
-
-.text-longshadow {
-  max-width: 100%;
-  height: auto;
-  margin-top: 50px;
-  color: black;
-  font-size: 8rem; 
-  line-height: 8rem;
-  font-family: lato;
-  font-weight: 900;
-  text-align: center;
-  @include text-shadow(longshadow(darken($bg,30%),$bg,50, 0.5));
+img {
+  display: block; 
+  margin top: 500px;
+  margin: auto;
+  width: 35%;
+  border-radius: 50%;
+  position: relative;
+  top: 270px;
+  clear: left;
+  
 }
-
 
