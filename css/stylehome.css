@@ -1,5 +1,4 @@
 
-
 /*
 * {
   
@@ -16,26 +15,37 @@ body {
 }
 
 
-.social {
-  position: relative;
-  top: 100px;
+h1 {
   margin: auto;
+  width: 50%;
+  
+  margin-top: 5px;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 80px;
+}
+
+
+.social {
+  
+  margin: auto;
+  width: 50%;
+  padding: 5px;
   font-size:60px;
 
 }
 
 
 .content {
-  position: absolute;
-  left: 0;
-  right: 75px;
+  margin: auto;
+  width: 50%;
+  text-align: center;
 }
 
 .btn {
   display: inline-block;
-  margin: 50px;
-  width: auto;    
+  margin: 20px;  
+  width: 150px;
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
@@ -59,6 +69,15 @@ a {
   text-decoration: inherit; 
 }
 
+i {
+  padding-right: 100px;
+  padding-left: 100px;
+
+}
+
+i:hover {
+  color: rgb(152, 218, 232);
+}
 
 
 /*
@@ -70,23 +89,21 @@ img {
   border-radius: 50%;
   margin: auto;
   margin-top: 80px;
-  width: 50%;
+  width: 40%;
   clear: left;
 }
 */
 
 img {
   display: block; 
-  margin top: 500px;
   margin: auto;
-  width: 35%;
+  width: 30%;
   border-radius: 50%;
-  position: relative;
-  top: 270px;
+  
+  
   clear: left;
   
 }
-
 
 
 
