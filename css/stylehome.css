@@ -78,6 +78,11 @@ i:hover {
   color: rgb(152, 218, 232);
 }
 
+#bottomline {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+
 
 /*
 img {
