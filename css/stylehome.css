@@ -28,7 +28,7 @@ h1 {
 
 .social {
   margin: auto;
-  width: 50%;
+  width: 30%;
   padding: 5px;
   font-size:60px;
   text-align: center;
@@ -79,8 +79,10 @@ i:hover {
 }
 
 #bottomline {
+  margin: auto;
+  width: 50%;
   font-family: 'Lato', sans-serif;
-  font-size: 15px;
+  font-size: 30px;
 }
 
 
