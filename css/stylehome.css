@@ -36,7 +36,8 @@ h1 {
 
 
 .content {
-  display: inline-block;
+  margin: auto;
+  width: 50%;
   text-align: center;
 }
 
